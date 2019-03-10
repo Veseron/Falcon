@@ -52,6 +52,5 @@ api = falcon.API(middleware=[cors.middleware])
 api.add_route('/api/contacts', GetContacts())
 api.add_route('/api/contacts/add/{name}/{email}/{phone}', EditContacts())
 api.add_route('api/contacts/remove/{contact_id}', RemoveContacts())
-# api.add_route('/api/contacts/edit', EditContacts())
 
 serve(api, host='127.0.0.1', port='3000')

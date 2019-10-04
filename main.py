@@ -7,7 +7,7 @@ from waitress import serve
 
 cors = falcon_cors.CORS(allow_all_origins=True)
 
-client = MongoClient('mongodb://admin:7507276Nik@ds038547.mlab.com:38547/vueproject')
+client = MongoClient('#login/password')
 contacts = client.vueproject.contacts
 
 
